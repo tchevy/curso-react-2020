@@ -24,11 +24,16 @@ class App extends React.Component {
  }
 
   render(){
+// CRIANDO TAG
+      const MeuComboBox = () => this.criaComboBox()
+//FIM DA TAG
     return (
-      <>
+  //CHAMAR A TAG NO COMPONENTE
+  <>
         <input type="text" value={this.state.nome} onChange={this.modificarNome} />
         <h1>Hello {this.state.nome} </h1>
-        {this.criaComboBox()}
+        
+        <MeuComboBox/>
       </>
     )
   }

@@ -11,7 +11,7 @@ class App extends React.Component {
        nome: event.target.value
      })
   }
-  
+  /*
  criaComboBox = () => {
    const opcoes = [ "Roberto"," Meiriane" ]
    const comboBoxOpcoes = opcoes.map( opcao => <option>{opcao}</option>)
@@ -22,14 +22,14 @@ class App extends React.Component {
      </select>
    )
  }
-
+*/
   render(){
     return (
-      <>
-        <input type="text" value={this.state.nome} onChange={this.modificarNome} />
-        <h1>Hello {this.state.nome} </h1>
-        {this.criaComboBox()}
-      </>
+      [
+        <input type="text" value={this.state.nome} onChange={this.modificarNome} />,
+        <h1>Hello {this.state.nome} </h1>,
+        <h2> OUtro componente</h2>
+      ]
     )
   }
 
